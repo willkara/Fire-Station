@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "storage": {
+      "FireStationConstants": [
+        "read"
+      ]
+    }
+  },
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "FireStationModels",
+      "version": 1
+    }
+  ]
+}
