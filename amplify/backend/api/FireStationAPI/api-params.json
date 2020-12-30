@@ -1,35 +1,35 @@
 {
-    "paths": [
-        {
-            "name": "/FireConstants",
-            "lambdaFunction": "FireConstantsManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/FireConstants"
-        }
-    ],
-    "resourceName": "FireStationAPI",
-    "apiName": "FireStationAPI",
-    "functionArns": [
-        {
-            "lambdaFunction": "FireConstantsManager"
-        }
-    ],
-    "privacy": {
-        "auth": 0,
-        "unauth": 0,
-        "authRoleName": "amplify-firestation-prod-234657-authRole",
-        "unAuthRoleName": "amplify-firestation-prod-234657-unauthRole"
-    },
-    "dependsOn": [
-        {
-            "category": "function",
-            "resourceName": "FireConstantsManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        }
-    ]
+  "paths": [
+    {
+      "name": "/FireConstants",
+      "lambdaFunction": "FireConstantsManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/FireConstants"
+    }
+  ],
+  "resourceName": "FireStationAPI",
+  "apiName": "FireStationAPI",
+  "functionArns": [
+    {
+      "lambdaFunction": "FireConstantsManager"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-firestation-prod-234657-authRole",
+    "unAuthRoleName": "amplify-firestation-prod-234657-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "FireConstantsManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
 }

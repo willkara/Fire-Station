@@ -1,182 +1,248 @@
 {
-    "AWSTemplateFormatVersion": "2010-09-09",
-    "Description": "Lambda Function resource stack creation using Amplify CLI",
-    "Parameters": {
-        "CloudWatchRule": {
-            "Type": "String",
-            "Default" : "NONE",
-            "Description" : " Schedule Expression"
-        },
-        "env": {
-            "Type": "String"
-        },
-    
-    
-    
-        "storageFireStationConstantsName": {
-            "Type": "String",
-            "Default": "storageFireStationConstantsName"
-            },
-        
-        "storageFireStationConstantsArn": {
-            "Type": "String",
-            "Default": "storageFireStationConstantsArn"
-            },
-        
-    
-        
-    
-        "functionFireStationModelsArn": {
-            "Type": "String",
-            "Default": "functionFireStationModelsArn"
-            }
-        
-    
-        
-    
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Lambda Function resource stack creation using Amplify CLI",
+  "Parameters": {
+    "CloudWatchRule": {
+      "Type": "String",
+      "Default": "NONE",
+      "Description": " Schedule Expression"
     },
-    "Conditions": {
-        "ShouldNotCreateEnvResources": {
-            "Fn::Equals": [
-                {
+    "env": {
+      "Type": "String"
+    },
+    "storageFireStationConstantsName": {
+      "Type": "String",
+      "Default": "storageFireStationConstantsName"
+    },
+    "storageFireStationConstantsArn": {
+      "Type": "String",
+      "Default": "storageFireStationConstantsArn"
+    },
+    "functionFireStationModelsArn": {
+      "Type": "String",
+      "Default": "functionFireStationModelsArn"
+    }
+  },
+  "Conditions": {
+    "ShouldNotCreateEnvResources": {
+      "Fn::Equals": [
+        {
+          "Ref": "env"
+        },
+        "NONE"
+      ]
+    }
+  },
+  "Resources": {
+    "LambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Metadata": {
+        "aws:asset:path": "./src",
+        "aws:asset:property": "Code"
+      },
+      "Properties": {
+        "Handler": "index.handler",
+        "FunctionName": {
+          "Fn::If": [
+            "ShouldNotCreateEnvResources",
+            "FireConstantsManager",
+            {
+              "Fn::Join": [
+                "",
+                [
+                  "FireConstantsManager",
+                  "-",
+                  {
                     "Ref": "env"
-                },
-                "NONE"
-            ]
-        }
-    },
-    "Resources": {
-        "LambdaFunction": {
-          "Type": "AWS::Lambda::Function",
-          "Metadata": {
-            "aws:asset:path": "./src",
-            "aws:asset:property": "Code"
-          },
-          "Properties": {
-            "Handler": "index.handler",
-            "FunctionName": {
-                "Fn::If": [
-                    "ShouldNotCreateEnvResources",
-                    "FireConstantsManager",
-                    {
-
-                        "Fn::Join": [
-                            "",
-                            [
-                                "FireConstantsManager",
-                                "-",
-                                {
-                                    "Ref": "env"
-                                }
-                            ]
-                        ]
-                    }
+                  }
                 ]
+              ]
+            }
+          ]
+        },
+        "Environment": {
+          "Variables": {
+            "ENV": {
+              "Ref": "env"
             },
-            "Environment": {
-                "Variables" : {"ENV":{"Ref":"env"},"REGION":{"Ref":"AWS::Region"},"STORAGE_FIRESTATIONCONSTANTS_NAME":{"Ref":"storageFireStationConstantsName"},"STORAGE_FIRESTATIONCONSTANTS_ARN":{"Ref":"storageFireStationConstantsArn"}}
+            "REGION": {
+              "Ref": "AWS::Region"
             },
-            "Role": { "Fn::GetAtt" : ["LambdaExecutionRole", "Arn"] },
-            "Runtime": "nodejs12.x",
-            "Layers": [{"Fn::Sub":"arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:FireStationModels-prod:1"}],
-            "Timeout": "25"
+            "STORAGE_FIRESTATIONCONSTANTS_NAME": {
+              "Ref": "storageFireStationConstantsName"
+            },
+            "STORAGE_FIRESTATIONCONSTANTS_ARN": {
+              "Ref": "storageFireStationConstantsArn"
+            }
           }
         },
-        "LambdaExecutionRole": {
-            "Type": "AWS::IAM::Role",
-            "Properties": {
-                "RoleName": {
-                    "Fn::If": [
-                        "ShouldNotCreateEnvResources",
-                        "firestationLambdaRole77221d78",
-                        {
-
-                            "Fn::Join": [
-                                "",
-                                [
-                                    "firestationLambdaRole77221d78",
-                                    "-",
-                                    {
-                                        "Ref": "env"
-                                    }
-                                ]
-                            ]
-                        }
-                    ]
-                },
-                "AssumeRolePolicyDocument": {
-                    "Version": "2012-10-17",
-                    "Statement": [
-                        {
-                            "Effect": "Allow",
-                            "Principal": {
-                                "Service": [
-                                    "lambda.amazonaws.com"
-                                ]
-                            },
-                            "Action": [
-                                "sts:AssumeRole"
-                            ]
-                        }
-                    ]
-                }
-            }
-        }
-        ,"lambdaexecutionpolicy": {
-            "DependsOn": ["LambdaExecutionRole"],
-            "Type": "AWS::IAM::Policy",
-            "Properties": {
-                "PolicyName": "lambda-execution-policy",
-                "Roles": [{ "Ref": "LambdaExecutionRole" }],
-                "PolicyDocument": {
-                    "Version": "2012-10-17",
-                    "Statement": [
-                        {
-                            "Effect": "Allow",
-                            "Action":["logs:CreateLogGroup",
-                            "logs:CreateLogStream",
-                            "logs:PutLogEvents"],
-                            "Resource": { "Fn::Sub" : [ "arn:aws:logs:${region}:${account}:log-group:/aws/lambda/${lambda}:log-stream:*", { "region": {"Ref": "AWS::Region"},  "account": {"Ref": "AWS::AccountId"}, "lambda": {"Ref": "LambdaFunction"}} ]}
-                        }
-                    ]
-                }
-            }
-        }
-        ,"AmplifyResourcesPolicy": {
-            "DependsOn": ["LambdaExecutionRole"],
-            "Type": "AWS::IAM::Policy",
-            "Properties": {
-                "PolicyName": "amplify-lambda-execution-policy",
-                "Roles": [{ "Ref": "LambdaExecutionRole" }],
-                "PolicyDocument": {
-                    "Version": "2012-10-17",
-                    "Statement": [{"Effect":"Allow","Action":["dynamodb:Get*","dynamodb:BatchGetItem","dynamodb:List*","dynamodb:Describe*","dynamodb:Scan","dynamodb:Query"],"Resource":[{"Ref":"storageFireStationConstantsArn"},{"Fn::Join":["/",[{"Ref":"storageFireStationConstantsArn"},"index/*"]]}]}]
-                }
-            }
-        }
-        
-        
-        
+        "Role": {
+          "Fn::GetAtt": [
+            "LambdaExecutionRole",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs12.x",
+        "Layers": [
+          {
+            "Fn::Sub": "arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:FireStationModels-prod:1"
+          }
+        ],
+        "Timeout": "25"
+      }
     },
-    "Outputs": {
-        "Name": {
-            "Value": {
-                "Ref": "LambdaFunction"
+    "LambdaExecutionRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "RoleName": {
+          "Fn::If": [
+            "ShouldNotCreateEnvResources",
+            "firestationLambdaRole77221d78",
+            {
+              "Fn::Join": [
+                "",
+                [
+                  "firestationLambdaRole77221d78",
+                  "-",
+                  {
+                    "Ref": "env"
+                  }
+                ]
+              ]
             }
+          ]
         },
-        "Arn": {
-            "Value": {"Fn::GetAtt": ["LambdaFunction", "Arn"]}
-        },
-        "Region": {
-            "Value": {
-                "Ref": "AWS::Region"
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": [
+                  "lambda.amazonaws.com"
+                ]
+              },
+              "Action": [
+                "sts:AssumeRole"
+              ]
             }
-        },
-        "LambdaExecutionRole": {
-            "Value": {
-                "Ref": "LambdaExecutionRole"
-            }
+          ]
         }
-        
+      }
+    },
+    "lambdaexecutionpolicy": {
+      "DependsOn": [
+        "LambdaExecutionRole"
+      ],
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyName": "lambda-execution-policy",
+        "Roles": [
+          {
+            "Ref": "LambdaExecutionRole"
+          }
+        ],
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+              ],
+              "Resource": {
+                "Fn::Sub": [
+                  "arn:aws:logs:${region}:${account}:log-group:/aws/lambda/${lambda}:log-stream:*",
+                  {
+                    "region": {
+                      "Ref": "AWS::Region"
+                    },
+                    "account": {
+                      "Ref": "AWS::AccountId"
+                    },
+                    "lambda": {
+                      "Ref": "LambdaFunction"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "AmplifyResourcesPolicy": {
+      "DependsOn": [
+        "LambdaExecutionRole"
+      ],
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyName": "amplify-lambda-execution-policy",
+        "Roles": [
+          {
+            "Ref": "LambdaExecutionRole"
+          }
+        ],
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": [
+                "dynamodb:Get*",
+                "dynamodb:BatchGetItem",
+                "dynamodb:List*",
+                "dynamodb:Describe*",
+                "dynamodb:Scan",
+                "dynamodb:Query"
+              ],
+              "Resource": [
+                {
+                  "Ref": "storageFireStationConstantsArn"
+                },
+                {
+                  "Fn::Join": [
+                    "/",
+                    [
+                      {
+                        "Ref": "storageFireStationConstantsArn"
+                      },
+                      "index/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
+  },
+  "Outputs": {
+    "Name": {
+      "Value": {
+        "Ref": "LambdaFunction"
+      }
+    },
+    "Arn": {
+      "Value": {
+        "Fn::GetAtt": [
+          "LambdaFunction",
+          "Arn"
+        ]
+      }
+    },
+    "Region": {
+      "Value": {
+        "Ref": "AWS::Region"
+      }
+    },
+    "LambdaExecutionRole": {
+      "Value": {
+        "Ref": "LambdaExecutionRole"
+      }
+    }
+  }
 }
