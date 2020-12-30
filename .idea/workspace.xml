@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ebda4c-c722-4e9f-b8e2-9edb44e3c81d" name="Default Changelist" comment="" />
+    <list default="true" id="f0ebda4c-c722-4e9f-b8e2-9edb44e3c81d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/FireStationAPI-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/FireStationAPI-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/api-params.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/api-params.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/FireConstantsManager-cloudformation-template.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/amplify.state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/function-parameters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/parameters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/src/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/src/event.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/src/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/src/package.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +52,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\wkara\OneDrive\Documents\GitHub\Fire-Station\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="build.tools" />
     <property name="ts.external.directory.path" value="C:\Users\wkara\OneDrive\Documents\GitHub\Fire-Station\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -50,7 +65,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609296053393</updated>
-      <workItem from="1609296058745" duration="8112000" />
+      <workItem from="1609296058745" duration="8472000" />
+      <workItem from="1609337126987" duration="2682000" />
     </task>
     <servers />
   </component>
