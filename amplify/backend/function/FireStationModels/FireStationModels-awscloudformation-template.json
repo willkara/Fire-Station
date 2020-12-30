@@ -43,7 +43,7 @@
         },
         "LayerName": {
           "Fn::Sub": [
-            "FireStationCommonModels-${env}",
+            "FireStationModels-${env}",
             {
               "env": {
                 "Ref": "env"

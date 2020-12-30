@@ -1,19 +1,19 @@
 {
   "prod": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-firestation-prod-214300-authRole",
-      "UnauthRoleArn": "arn:aws:iam::252287541426:role/amplify-firestation-prod-214300-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::252287541426:role/amplify-firestation-prod-214300-authRole",
+      "AuthRoleName": "amplify-firestation-prod-234657-authRole",
+      "UnauthRoleArn": "arn:aws:iam::252287541426:role/amplify-firestation-prod-234657-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::252287541426:role/amplify-firestation-prod-234657-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-firestation-prod-214300-deployment",
-      "UnauthRoleName": "amplify-firestation-prod-214300-unauthRole",
-      "StackName": "amplify-firestation-prod-214300",
-      "StackId": "arn:aws:cloudformation:us-east-1:252287541426:stack/amplify-firestation-prod-214300/bd4b1fd0-4a48-11eb-b978-1225390e8313",
-      "AmplifyAppId": "d2i9bjliuq45zf"
+      "DeploymentBucketName": "amplify-firestation-prod-234657-deployment",
+      "UnauthRoleName": "amplify-firestation-prod-234657-unauthRole",
+      "StackName": "amplify-firestation-prod-234657",
+      "StackId": "arn:aws:cloudformation:us-east-1:252287541426:stack/amplify-firestation-prod-234657/0d4882a0-4a5a-11eb-aad4-124a026c8667",
+      "AmplifyAppId": "d2eud3h5ybfnza"
     },
     "nonCFNdata": {
       "function": {
-        "FireStationCommonModels": {
+        "FireStationModels": {
           "layerVersionMap": {
             "1": {
               "permissions": [

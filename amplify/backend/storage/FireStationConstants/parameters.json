@@ -1,5 +1,5 @@
 {
-  "tableName": "FireStationConstants",
-  "partitionKeyName": "ConstantID",
-  "partitionKeyType": "S"
+    "tableName": "FireStationConstants",
+    "partitionKeyName": "ConstantID",
+    "partitionKeyType": "S"
 }

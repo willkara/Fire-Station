@@ -7,7 +7,7 @@
     "config": {
       "SourceDir": "src",
       "DistributionDir": "dist/Fire-Station",
-      "BuildCommand": "npm.cmd run-script build -- --prod",
+      "BuildCommand": "npm.cmd run-script build --prod",
       "StartCommand": "ng serve"
     }
   },
