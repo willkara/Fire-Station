@@ -6,6 +6,8 @@ import { StateinfoComponent } from './components/pages/stateinfo/stateinfo.compo
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'stateinfo', component: StateinfoComponent },
+
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
