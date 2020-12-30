@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ebda4c-c722-4e9f-b8e2-9edb44e3c81d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/amplify/cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/cli.json" afterDir="false" />
-    </list>
+    <list default="true" id="f0ebda4c-c722-4e9f-b8e2-9edb44e3c81d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609296053393</updated>
-      <workItem from="1609296058745" duration="5944000" />
+      <workItem from="1609296058745" duration="6579000" />
     </task>
     <servers />
   </component>
