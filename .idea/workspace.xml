@@ -6,163 +6,54 @@
   <component name="ChangeListManager">
     <list default="true" id="f0ebda4c-c722-4e9f-b8e2-9edb44e3c81d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/FireStationAPI-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/api-params.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferalManager/ArsonAgencyReferalManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferalManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferalManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferalManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferalManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferalManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferalManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferalManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferalManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/ArsonJuvSubManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/ArsonManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/BasicAidManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/FireStationAPI-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/FireStationAPI-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/api-params.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/api-params.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/FireStationAPI/parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferealManager/ArsonAgencyReferealManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferealManager/ArsonAgencyReferealManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferealManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/ArsonAgencyReferealManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/ArsonJuvSubManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/ArsonJuvSubManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/ArsonJuvSubManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/ArsonManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/ArsonManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/ArsonManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/BasicAidManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/BasicAidManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/BasicAidManager/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicIncidentManager/BasicIncidentManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/BasicIncidentManager/BasicIncidentManager-cloudformation-template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicIncidentManager/function-parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/BasicIncidentManager/function-parameters.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicIncidentManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicIncidentManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/CivilianCasualtyManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/EMSManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/BasicIncidentManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/BasicIncidentManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/CivilianCasualtyManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/CivilianCasualtyManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/CivilianCasualtyManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/EMSManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/EMSManager/EMSManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/EMSManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/EMSManager/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amplify/backend/function/FDHeaderManager/FDHeaderManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FDHeaderManager/FDHeaderManager-cloudformation-template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FDHeaderManager/function-parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FDHeaderManager/function-parameters.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FDHeaderManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FDHeaderManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/FFCasualtyManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/FFEquipFailManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FDHeaderManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FDHeaderManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/FFCasualtyManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/FFCasualtyManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FFCasualtyManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/FFEquipFailManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/FFEquipFailManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FFEquipFailManager/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/FireConstantsManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/FireConstantsManager-cloudformation-template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/function-parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/function-parameters.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/parameters.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireConstantsManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/FireIncidentManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireStationModels/FireStationModels-awscloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireStationModels/layer-runtimes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireStationModels/lib/nodejs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireStationModels/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/HazChemManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolvedManager/HazMatEquipInvolvedManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolvedManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolvedManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolvedManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolvedManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolvedManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolvedManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolvedManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolvedManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/HazMatManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/HazMobPropManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/IncidentAddressManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/WildlandsManager-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/amplify.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/function-parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/src/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/src/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/src/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/team-provider-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/team-provider-info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/FireIncidentManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/FireIncidentManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/FireIncidentManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/HazChemManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/HazChemManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/HazChemManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolved/HazMatEquipInvolved-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolved/HazMatEquipInvolved-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolved/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/HazMatEquipInvolved/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/HazMatManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/HazMatManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/HazMatManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/HazMobPropManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/HazMobPropManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/HazMobPropManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/IncidentAddressManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/IncidentAddressManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/IncidentAddressManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/WildlandsManager-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/WildlandsManager-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/WildlandsManager/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609296053393</updated>
       <workItem from="1609296058745" duration="8472000" />
-      <workItem from="1609337126987" duration="4933000" />
+      <workItem from="1609337126987" duration="17122000" />
     </task>
     <servers />
   </component>

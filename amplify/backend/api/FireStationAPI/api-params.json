@@ -1,358 +1,358 @@
 {
-    "paths": [
-        {
-            "name": "/fireconstants/{id}",
-            "lambdaFunction": "FireConstantsManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/fireconstants/*"
-        },
-        {
-            "name": "/fdheader",
-            "lambdaFunction": "FDHeaderManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/fdheader"
-        },
-        {
-            "name": "/basicincident",
-            "lambdaFunction": "BasicIncidentManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/basicincident"
-        },
-        {
-            "name": "/fireincident",
-            "lambdaFunction": "FireIncidentManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/fireincident"
-        },
-        {
-            "name": "/civiliancasualty",
-            "lambdaFunction": "CivilianCasualtyManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/civiliancasualty"
-        },
-        {
-            "name": "/ems",
-            "lambdaFunction": "EMSManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/ems"
-        },
-        {
-            "name": "/wildlands",
-            "lambdaFunction": "WildlandsManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/wildlands"
-        },
-        {
-            "name": "/hazmat",
-            "lambdaFunction": "HazMatManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/hazmat"
-        },
-        {
-            "name": "/hazchem",
-            "lambdaFunction": "HazChemManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/hazchem"
-        },
-        {
-            "name": "/hazmobprop",
-            "lambdaFunction": "HazMobPropManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/hazmobprop"
-        },
-        {
-            "name": "/hazmatequipinvolved",
-            "lambdaFunction": "HazMatEquipInvolved",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/hazmatequipinvolved"
-        },
-        {
-            "name": "/arson",
-            "lambdaFunction": "ArsonManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/arson"
-        },
-        {
-            "name": "/arsonjuvsub",
-            "lambdaFunction": "ArsonJuvSubManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/arsonjuvsub"
-        },
-        {
-            "name": "/arsonagencyrefereal",
-            "lambdaFunction": "ArsonAgencyReferealManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/arsonagencyrefereal"
-        },
-        {
-            "name": "/incidentaddress",
-            "lambdaFunction": "IncidentAddressManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/incidentaddress"
-        },
-        {
-            "name": "/basicaid",
-            "lambdaFunction": "BasicAidManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/basicaid"
-        },
-        {
-            "name": "/ffcasualty",
-            "lambdaFunction": "FFCasualtyManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/ffcasualty"
-        },
-        {
-            "name": "/ffequipfail",
-            "lambdaFunction": "FFEquipFailManager",
-            "privacy": {
-                "open": true
-            },
-            "policyResourceName": "/ffequipfail"
-        }
-    ],
-    "resourceName": "FireStationAPI",
-    "apiName": "FireStationAPI",
-    "functionArns": [
-        {
-            "lambdaFunction": "FireConstantsManager"
-        },
-        {
-            "lambdaFunction": "FDHeaderManager"
-        },
-        {
-            "lambdaFunction": "BasicIncidentManager"
-        },
-        {
-            "lambdaFunction": "FireIncidentManager"
-        },
-        {
-            "lambdaFunction": "CivilianCasualtyManager"
-        },
-        {
-            "lambdaFunction": "EMSManager"
-        },
-        {
-            "lambdaFunction": "WildlandsManager"
-        },
-        {
-            "lambdaFunction": "HazMatManager"
-        },
-        {
-            "lambdaFunction": "HazChemManager"
-        },
-        {
-            "lambdaFunction": "HazMobPropManager"
-        },
-        {
-            "lambdaFunction": "HazMatEquipInvolved"
-        },
-        {
-            "lambdaFunction": "ArsonManager"
-        },
-        {
-            "lambdaFunction": "ArsonJuvSubManager"
-        },
-        {
-            "lambdaFunction": "ArsonAgencyReferealManager"
-        },
-        {
-            "lambdaFunction": "IncidentAddressManager"
-        },
-        {
-            "lambdaFunction": "BasicAidManager"
-        },
-        {
-            "lambdaFunction": "FFCasualtyManager"
-        },
-        {
-            "lambdaFunction": "FFEquipFailManager"
-        }
-    ],
-    "privacy": {
-        "auth": 0,
-        "unauth": 0,
-        "authRoleName": "amplify-firestation-prod-234657-authRole",
-        "unAuthRoleName": "amplify-firestation-prod-234657-unauthRole"
+  "paths": [
+    {
+      "name": "/fireconstants/{id}",
+      "lambdaFunction": "FireConstantsManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/fireconstants/*"
     },
-    "dependsOn": [
-        {
-            "category": "function",
-            "resourceName": "FireConstantsManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "FDHeaderManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "BasicIncidentManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "FireIncidentManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "CivilianCasualtyManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "EMSManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "WildlandsManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "HazMatManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "HazChemManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "HazMobPropManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "HazMatEquipInvolved",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "ArsonManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "ArsonJuvSubManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "ArsonAgencyReferealManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "IncidentAddressManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "BasicAidManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "FFCasualtyManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "FFEquipFailManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        }
-    ]
+    {
+      "name": "/fdheader",
+      "lambdaFunction": "FDHeaderManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/fdheader"
+    },
+    {
+      "name": "/basicincident",
+      "lambdaFunction": "BasicIncidentManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/basicincident"
+    },
+    {
+      "name": "/fireincident",
+      "lambdaFunction": "FireIncidentManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/fireincident"
+    },
+    {
+      "name": "/civiliancasualty",
+      "lambdaFunction": "CivilianCasualtyManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/civiliancasualty"
+    },
+    {
+      "name": "/ems",
+      "lambdaFunction": "EMSManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/ems"
+    },
+    {
+      "name": "/wildlands",
+      "lambdaFunction": "WildlandsManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/wildlands"
+    },
+    {
+      "name": "/hazmat",
+      "lambdaFunction": "HazMatManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/hazmat"
+    },
+    {
+      "name": "/hazchem",
+      "lambdaFunction": "HazChemManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/hazchem"
+    },
+    {
+      "name": "/hazmobprop",
+      "lambdaFunction": "HazMobPropManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/hazmobprop"
+    },
+    {
+      "name": "/hazmatequipinvolved",
+      "lambdaFunction": "HazMatEquipInvolved",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/hazmatequipinvolved"
+    },
+    {
+      "name": "/arson",
+      "lambdaFunction": "ArsonManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/arson"
+    },
+    {
+      "name": "/arsonjuvsub",
+      "lambdaFunction": "ArsonJuvSubManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/arsonjuvsub"
+    },
+    {
+      "name": "/arsonagencyrefereal",
+      "lambdaFunction": "ArsonAgencyReferealManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/arsonagencyrefereal"
+    },
+    {
+      "name": "/incidentaddress",
+      "lambdaFunction": "IncidentAddressManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/incidentaddress"
+    },
+    {
+      "name": "/basicaid",
+      "lambdaFunction": "BasicAidManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/basicaid"
+    },
+    {
+      "name": "/ffcasualty",
+      "lambdaFunction": "FFCasualtyManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/ffcasualty"
+    },
+    {
+      "name": "/ffequipfail",
+      "lambdaFunction": "FFEquipFailManager",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/ffequipfail"
+    }
+  ],
+  "resourceName": "FireStationAPI",
+  "apiName": "FireStationAPI",
+  "functionArns": [
+    {
+      "lambdaFunction": "FireConstantsManager"
+    },
+    {
+      "lambdaFunction": "FDHeaderManager"
+    },
+    {
+      "lambdaFunction": "BasicIncidentManager"
+    },
+    {
+      "lambdaFunction": "FireIncidentManager"
+    },
+    {
+      "lambdaFunction": "CivilianCasualtyManager"
+    },
+    {
+      "lambdaFunction": "EMSManager"
+    },
+    {
+      "lambdaFunction": "WildlandsManager"
+    },
+    {
+      "lambdaFunction": "HazMatManager"
+    },
+    {
+      "lambdaFunction": "HazChemManager"
+    },
+    {
+      "lambdaFunction": "HazMobPropManager"
+    },
+    {
+      "lambdaFunction": "HazMatEquipInvolved"
+    },
+    {
+      "lambdaFunction": "ArsonManager"
+    },
+    {
+      "lambdaFunction": "ArsonJuvSubManager"
+    },
+    {
+      "lambdaFunction": "ArsonAgencyReferealManager"
+    },
+    {
+      "lambdaFunction": "IncidentAddressManager"
+    },
+    {
+      "lambdaFunction": "BasicAidManager"
+    },
+    {
+      "lambdaFunction": "FFCasualtyManager"
+    },
+    {
+      "lambdaFunction": "FFEquipFailManager"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-firestation-prod-234657-authRole",
+    "unAuthRoleName": "amplify-firestation-prod-234657-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "FireConstantsManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "FDHeaderManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "BasicIncidentManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "FireIncidentManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "CivilianCasualtyManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "EMSManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "WildlandsManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "HazMatManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "HazChemManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "HazMobPropManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "HazMatEquipInvolved",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "ArsonManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "ArsonJuvSubManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "ArsonAgencyReferealManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "IncidentAddressManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "BasicAidManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "FFCasualtyManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "FFEquipFailManager",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
 }

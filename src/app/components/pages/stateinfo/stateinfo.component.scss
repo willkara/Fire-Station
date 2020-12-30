@@ -1,0 +1,22 @@
+.map {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+#parent {
+  display: flex;
+}
+#narrow {
+  width: 1000px;
+  /* Just so it's visible */
+}
+#wide {
+  flex: 1;
+  /* Grow to rest of container */
+  /* Just so it's visible */
+}
+
+table {
+  width: 100%;
+}
