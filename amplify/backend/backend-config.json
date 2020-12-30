@@ -6,249 +6,6 @@
     }
   },
   "function": {
-    "FireStationModels": {
-      "providerPlugin": "awscloudformation",
-      "service": "LambdaLayer",
-      "build": true
-    },
-    "FDHeaderManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "BasicIncidentManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "FireIncidentManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "CivilianCasualtyManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "EMSManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "WildlandsManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "HazMatManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "HazChemManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "HazMobPropManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "HazMatEquipInvolvedManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "ArsonManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "ArsonJuvSubManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "ArsonAgencyReferalManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "IncidentAddressManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "BasicAidManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "FFCasualtyManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "FFEquipFailManager": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
-        }
-      ]
-    },
     "FireConstantsManager": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -265,15 +22,93 @@
             "Name": "TABLE_NAME",
             "Arn": "TABLE_ARN"
           }
-        },
-        {
-          "category": "function",
-          "resourceName": "FireStationModels",
-          "attributes": [
-            "Arn"
-          ]
         }
       ]
+    },
+    "FDHeaderManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "BasicIncidentManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "FireIncidentManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "CivilianCasualtyManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "EMSManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "WildlandsManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "HazMatManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "HazChemManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "HazMobPropManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "HazMatEquipInvolved": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ArsonManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ArsonJuvSubManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ArsonAgencyReferealManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "IncidentAddressManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "BasicAidManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "FFCasualtyManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "FFEquipFailManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "api": {
@@ -281,6 +116,14 @@
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "FireConstantsManager",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        },
         {
           "category": "function",
           "resourceName": "FDHeaderManager",
@@ -355,7 +198,7 @@
         },
         {
           "category": "function",
-          "resourceName": "HazMatEquipInvolvedManager",
+          "resourceName": "HazMatEquipInvolved",
           "attributes": [
             "Name",
             "Arn"
@@ -379,7 +222,7 @@
         },
         {
           "category": "function",
-          "resourceName": "ArsonAgencyReferalManager",
+          "resourceName": "ArsonAgencyReferealManager",
           "attributes": [
             "Name",
             "Arn"
@@ -412,14 +255,6 @@
         {
           "category": "function",
           "resourceName": "FFEquipFailManager",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        },
-        {
-          "category": "function",
-          "resourceName": "FireConstantsManager",
           "attributes": [
             "Name",
             "Arn"

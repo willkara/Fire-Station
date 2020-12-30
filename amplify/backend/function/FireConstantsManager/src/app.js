@@ -28,7 +28,7 @@ const partitionKeyType = "S";
 const sortKeyName = "";
 const sortKeyType = "";
 const hasSortKey = sortKeyName !== "";
-const path = "/fireconstant/:id";
+const path = "/fireconstants/:id";
 const UNAUTH = 'UNAUTH';
 const hashKeyPath = '/:' + partitionKeyName;
 const sortKeyPath = hasSortKey ? '/:' + sortKeyName : '';

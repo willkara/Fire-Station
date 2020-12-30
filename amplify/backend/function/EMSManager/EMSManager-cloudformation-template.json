@@ -9,17 +9,7 @@
         },
         "env": {
             "Type": "String"
-        },
-    
-    
-    
-        "functionFireStationModelsArn": {
-            "Type": "String",
-            "Default": "functionFireStationModelsArn"
-            }
-        
-    
-        
+        }
     
     },
     "Conditions": {
@@ -65,7 +55,7 @@
             },
             "Role": { "Fn::GetAtt" : ["LambdaExecutionRole", "Arn"] },
             "Runtime": "nodejs12.x",
-            "Layers": [{"Fn::Sub":"arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:FireStationModels-prod:2"}],
+            "Layers": [],
             "Timeout": "25"
           }
         },
@@ -75,13 +65,13 @@
                 "RoleName": {
                     "Fn::If": [
                         "ShouldNotCreateEnvResources",
-                        "firestationLambdaRolebde608eb",
+                        "firestationLambdaRole1f3d4681",
                         {
 
                             "Fn::Join": [
                                 "",
                                 [
-                                    "firestationLambdaRolebde608eb",
+                                    "firestationLambdaRole1f3d4681",
                                     "-",
                                     {
                                         "Ref": "env"

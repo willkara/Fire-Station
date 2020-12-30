@@ -10,30 +10,6 @@
       "StackName": "amplify-firestation-prod-234657",
       "StackId": "arn:aws:cloudformation:us-east-1:252287541426:stack/amplify-firestation-prod-234657/0d4882a0-4a5a-11eb-aad4-124a026c8667",
       "AmplifyAppId": "d2eud3h5ybfnza"
-    },
-    "nonCFNdata": {
-      "function": {
-        "FireStationModels": {
-          "layerVersionMap": {
-            "1": {
-              "permissions": [
-                {
-                  "type": "private"
-                }
-              ],
-              "hash": "rXN5ChW/GLBVwiYbXILq+LiyIQajLHlHgVSc0bF3igo="
-            }
-          }
-        }
-      }
-    },
-    "categories": {
-      "function": {
-        "FireStationModels": {
-          "deploymentBucketName": "amplify-firestation-prod-234657-deployment",
-          "s3Key": "amplify-builds/FireStationModels-build.zip"
-        }
-      }
     }
   }
 }

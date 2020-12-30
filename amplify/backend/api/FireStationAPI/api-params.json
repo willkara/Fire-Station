@@ -1,135 +1,156 @@
 {
     "paths": [
         {
+            "name": "/fireconstants/{id}",
+            "lambdaFunction": "FireConstantsManager",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/fireconstants/*"
+        },
+        {
             "name": "/fdheader",
             "lambdaFunction": "FDHeaderManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/fdheader"
         },
         {
             "name": "/basicincident",
             "lambdaFunction": "BasicIncidentManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/basicincident"
         },
         {
             "name": "/fireincident",
             "lambdaFunction": "FireIncidentManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/fireincident"
         },
         {
-            "name": "/CivilianCasualty",
+            "name": "/civiliancasualty",
             "lambdaFunction": "CivilianCasualtyManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/civiliancasualty"
         },
         {
             "name": "/ems",
             "lambdaFunction": "EMSManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/ems"
         },
         {
             "name": "/wildlands",
             "lambdaFunction": "WildlandsManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/wildlands"
         },
         {
             "name": "/hazmat",
             "lambdaFunction": "HazMatManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/hazmat"
         },
         {
             "name": "/hazchem",
             "lambdaFunction": "HazChemManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/hazchem"
         },
         {
             "name": "/hazmobprop",
             "lambdaFunction": "HazMobPropManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/hazmobprop"
         },
         {
             "name": "/hazmatequipinvolved",
-            "lambdaFunction": "HazMatEquipInvolvedManager",
+            "lambdaFunction": "HazMatEquipInvolved",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/hazmatequipinvolved"
         },
         {
             "name": "/arson",
             "lambdaFunction": "ArsonManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/arson"
         },
         {
             "name": "/arsonjuvsub",
             "lambdaFunction": "ArsonJuvSubManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/arsonjuvsub"
         },
         {
-            "name": "/arsonagencyreferal",
-            "lambdaFunction": "ArsonAgencyReferalManager",
+            "name": "/arsonagencyrefereal",
+            "lambdaFunction": "ArsonAgencyReferealManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/arsonagencyrefereal"
         },
         {
             "name": "/incidentaddress",
             "lambdaFunction": "IncidentAddressManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/incidentaddress"
         },
         {
             "name": "/basicaid",
             "lambdaFunction": "BasicAidManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/basicaid"
         },
         {
             "name": "/ffcasualty",
             "lambdaFunction": "FFCasualtyManager",
             "privacy": {
                 "open": true
-            }
+            },
+            "policyResourceName": "/ffcasualty"
         },
         {
             "name": "/ffequipfail",
             "lambdaFunction": "FFEquipFailManager",
             "privacy": {
                 "open": true
-            }
-        },
-        {
-            "name": "/fireconstant/{id}",
-            "lambdaFunction": "FireConstantsManager",
-            "privacy": {
-                "open": true
-            }
+            },
+            "policyResourceName": "/ffequipfail"
         }
     ],
     "resourceName": "FireStationAPI",
     "apiName": "FireStationAPI",
     "functionArns": [
+        {
+            "lambdaFunction": "FireConstantsManager"
+        },
         {
             "lambdaFunction": "FDHeaderManager"
         },
@@ -158,7 +179,7 @@
             "lambdaFunction": "HazMobPropManager"
         },
         {
-            "lambdaFunction": "HazMatEquipInvolvedManager"
+            "lambdaFunction": "HazMatEquipInvolved"
         },
         {
             "lambdaFunction": "ArsonManager"
@@ -167,7 +188,7 @@
             "lambdaFunction": "ArsonJuvSubManager"
         },
         {
-            "lambdaFunction": "ArsonAgencyReferalManager"
+            "lambdaFunction": "ArsonAgencyReferealManager"
         },
         {
             "lambdaFunction": "IncidentAddressManager"
@@ -180,9 +201,6 @@
         },
         {
             "lambdaFunction": "FFEquipFailManager"
-        },
-        {
-            "lambdaFunction": "FireConstantsManager"
         }
     ],
     "privacy": {
@@ -192,6 +210,14 @@
         "unAuthRoleName": "amplify-firestation-prod-234657-unauthRole"
     },
     "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "FireConstantsManager",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
         {
             "category": "function",
             "resourceName": "FDHeaderManager",
@@ -266,7 +292,7 @@
         },
         {
             "category": "function",
-            "resourceName": "HazMatEquipInvolvedManager",
+            "resourceName": "HazMatEquipInvolved",
             "attributes": [
                 "Name",
                 "Arn"
@@ -290,7 +316,7 @@
         },
         {
             "category": "function",
-            "resourceName": "ArsonAgencyReferalManager",
+            "resourceName": "ArsonAgencyReferealManager",
             "attributes": [
                 "Name",
                 "Arn"
@@ -327,15 +353,6 @@
                 "Name",
                 "Arn"
             ]
-        },
-        {
-            "category": "function",
-            "resourceName": "FireConstantsManager",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
         }
-    ],
-    "uuid": "6bc52a4d"
+    ]
 }

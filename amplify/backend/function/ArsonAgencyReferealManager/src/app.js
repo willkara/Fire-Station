@@ -30,12 +30,12 @@ app.use(function(req, res, next) {
  * Example get method *
  **********************/
 
-app.get('/arsonagencyreferal', function(req, res) {
+app.get('/arsonagencyrefereal', function(req, res) {
   // Add your code here
   res.json({success: 'get call succeed!', url: req.url});
 });
 
-app.get('/arsonagencyreferal/*', function(req, res) {
+app.get('/arsonagencyrefereal/*', function(req, res) {
   // Add your code here
   res.json({success: 'get call succeed!', url: req.url});
 });
@@ -44,12 +44,12 @@ app.get('/arsonagencyreferal/*', function(req, res) {
 * Example post method *
 ****************************/
 
-app.post('/arsonagencyreferal', function(req, res) {
+app.post('/arsonagencyrefereal', function(req, res) {
   // Add your code here
   res.json({success: 'post call succeed!', url: req.url, body: req.body})
 });
 
-app.post('/arsonagencyreferal/*', function(req, res) {
+app.post('/arsonagencyrefereal/*', function(req, res) {
   // Add your code here
   res.json({success: 'post call succeed!', url: req.url, body: req.body})
 });
@@ -58,12 +58,12 @@ app.post('/arsonagencyreferal/*', function(req, res) {
 * Example put method *
 ****************************/
 
-app.put('/arsonagencyreferal', function(req, res) {
+app.put('/arsonagencyrefereal', function(req, res) {
   // Add your code here
   res.json({success: 'put call succeed!', url: req.url, body: req.body})
 });
 
-app.put('/arsonagencyreferal/*', function(req, res) {
+app.put('/arsonagencyrefereal/*', function(req, res) {
   // Add your code here
   res.json({success: 'put call succeed!', url: req.url, body: req.body})
 });
@@ -72,12 +72,12 @@ app.put('/arsonagencyreferal/*', function(req, res) {
 * Example delete method *
 ****************************/
 
-app.delete('/arsonagencyreferal', function(req, res) {
+app.delete('/arsonagencyrefereal', function(req, res) {
   // Add your code here
   res.json({success: 'delete call succeed!', url: req.url});
 });
 
-app.delete('/arsonagencyreferal/*', function(req, res) {
+app.delete('/arsonagencyrefereal/*', function(req, res) {
   // Add your code here
   res.json({success: 'delete call succeed!', url: req.url});
 });
