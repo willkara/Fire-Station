@@ -20,9 +20,18 @@
                 {
                   "type": "private"
                 }
-              ]
+              ],
+              "hash": "rXN5ChW/GLBVwiYbXILq+LiyIQajLHlHgVSc0bF3igo="
             }
           }
+        }
+      }
+    },
+    "categories": {
+      "function": {
+        "FireStationModels": {
+          "deploymentBucketName": "amplify-firestation-prod-234657-deployment",
+          "s3Key": "amplify-builds/FireStationModels-build.zip"
         }
       }
     }

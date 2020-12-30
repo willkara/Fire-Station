@@ -88,7 +88,11 @@
             "Fn::Sub": "arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:FireStationModels-prod:1"
           }
         ],
-        "Timeout": "25"
+        "Timeout": "25",
+        "Code": {
+          "S3Bucket": "amplify-firestation-prod-234657-deployment",
+          "S3Key": "amplify-builds/FireConstantsManager-315461416e42414e7864-build.zip"
+        }
       }
     },
     "LambdaExecutionRole": {
