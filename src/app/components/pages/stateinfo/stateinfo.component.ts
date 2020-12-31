@@ -1,12 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {
-  circle,
-  latLng,
-  tileLayer,
-  geoJSON,
-  Map,
-  LeafletMouseEvent,
-} from 'leaflet';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { latLng, tileLayer, geoJSON, Map, LeafletMouseEvent } from 'leaflet';
 
 @Component({
   selector: 'app-stateinfo',
@@ -16,6 +9,8 @@ import {
 export class StateinfoComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+
+  currentState = 'Select a state';
 
   states = {
     type: 'FeatureCollection',
@@ -4404,6 +4399,11 @@ export class StateinfoComponent implements OnInit {
     ],
   };
 
+  onOver = ($event: LeafletMouseEvent) => {
+    this.currentState = $event['layer']['feature']['properties']['name'];
+    this.cdRef.detectChanges();
+  };
+
   options = {
     layers: [
       tileLayer(
@@ -4422,17 +4422,15 @@ export class StateinfoComponent implements OnInit {
     center: latLng(46.879966, -121.726909),
   };
 
-  constructor() {}
+  constructor(private cdRef: ChangeDetectorRef) {}
 
-  ngOnInit(): void {
-    geoJSON();
-  }
+  ngOnInit(): void {}
 
   onMapReady($event: Map) {
     console.log($event);
   }
 
-  onOver($event: LeafletMouseEvent) {
+  something($event: LeafletMouseEvent) {
     console.log($event);
   }
 }
