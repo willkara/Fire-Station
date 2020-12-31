@@ -4406,11 +4406,15 @@ export class StateinfoComponent implements OnInit {
 
   options = {
     layers: [
-      tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 18,
-        attribution: '...',
-        id: 'mapbox/light-v9',
-      }),
+      tileLayer(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}',
+        {
+          maxZoom: 18,
+          attribution:
+            'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+          id: 'mapbox/light-v9',
+        }
+      ),
       // @ts-ignore
       geoJSON(this.states).on('mouseover', this.onOver),
     ],
