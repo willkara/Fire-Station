@@ -4418,7 +4418,7 @@ export class StateinfoComponent implements OnInit {
       // @ts-ignore
       geoJSON(this.states).on('mouseover', this.onOver),
     ],
-    zoom: 5,
+    zoom: 4,
     center: latLng(46.879966, -121.726909),
   };
 

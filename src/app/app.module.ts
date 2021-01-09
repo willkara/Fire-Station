@@ -17,9 +17,16 @@ import { HomeComponent } from './components/shared/home/home.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTableModule } from '@angular/material/table';
+import { StationinfoComponent } from './components/pages/stationinfo/stationinfo.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, StateinfoComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    StateinfoComponent,
+    HomeComponent,
+    StationinfoComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
